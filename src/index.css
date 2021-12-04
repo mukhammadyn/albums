@@ -1,4 +1,12 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +19,139 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.site-main {
+  background-color: #f4f4f4;
+}
+
+.albums {
+  padding-top: 48px;
+  padding-bottom: 20px;
+}
+
+.albums__heading {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.albums-list__add {
+  margin-bottom: 12px;
+  padding: 12px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(32, 32, 32, 0.2);
+  cursor: pointer;
+}
+
+.albums__inner {
+  display: flex;
+}
+
+.albums-list {
+  width: calc(50% - 40px);
+  padding: 14px;
+}
+
+.albums-list__heading {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.albums-list__cards {
+  max-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-right: 40px;
+  padding: 0;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+.albums-list__item:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.albums-list__button {
+  width: 100%;
+  padding: 12px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(32, 32, 32, 0.2);
+}
+
+.albums-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  align-items: flex-start;
+  background-color: #fff;
+}
+
+.albums-form__heading {
+  margin: 0 auto;
+  margin-bottom: 14px;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.albums-form__input {
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(32, 32, 32, 0.2);
+}
+
+.albums-form__button {
+  margin-left: auto;
+  padding: 15px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(32, 32, 32, 0.2);
+  cursor: pointer;
+}
+
